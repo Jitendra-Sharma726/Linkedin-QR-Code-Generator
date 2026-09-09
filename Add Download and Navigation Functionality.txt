@@ -1,0 +1,21 @@
+Now, let's enhance the user experience by adding the final, essential features to our application. In this Component, you will make the generated QR code downloadable.
+
+Your Task
+
+Your goal is to update your main.py file and use the new qr_display.html template to add download and navigation functionality.
+
+Implement the Download Route: Create a new Flask route at /download/<filename>. This route must:
+
+Securely locate the requested QR code image file inside the static/qrcodes/ directory.
+Use Flask's send_file function to send the image to the user.
+Ensure the file is sent as an attachment, which will prompt the user's browser to open a "Save As..." dialog.
+Update the QR Display Template:
+
+Modify the provided qr_display.html template.
+Add a "Download QR" button with the class name "button".
+This button should link to the download route and allow the user to download the file linkedin_profile_qr.png from the static/qrcodes/ folder.
+Hint: Look for the element with the class name button-group in qr_display.html within the template - that’s where you should place the button.
+
+
+
+
